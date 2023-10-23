@@ -1,0 +1,11 @@
+<h1 class='mb-4' >Index#index</h1>
+
+
+  <div class='d-flex gap-3 flex-wrap justify-content-center' >
+<% @users.each do |user, index| %>
+    <div class=' col-12 col-sm-4 col-md-3 d-flex justify-content-center'  >
+      <p> Name <%= user.name %></p>
+      <p> <%=user.lastName%>  </p>      
+    </div>
+<%end%>
+  </div>
